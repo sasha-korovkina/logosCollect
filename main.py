@@ -7,35 +7,35 @@ import time
 import pyautogui
 import subprocess
 
-# Replace 'firefox' with the correct path to your Firefox executable if needed
-firefox_path = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Replace with the actual path
-subprocess.Popen([firefox_path])
-
-# Wait for Firefox to open (you may need to adjust the delay)
-time.sleep(2)
+# # Replace 'firefox' with the correct path to your Firefox executable if needed
+# firefox_path = r'C:\Program Files\Mozilla Firefox\firefox.exe'  # Replace with the actual path
+# subprocess.Popen([firefox_path])
+#
+# # Wait for Firefox to open (you may need to adjust the delay)
+# time.sleep(2)
 
 # OPEN FIREFOX #
 
-firefox_windows = pyautogui.getWindowsWithTitle("Mozilla Firefox")
-if firefox_windows:
-    firefox_window = firefox_windows[0]
-    firefox_window.activate()
-    pyautogui.sleep(1)
-    website_url = "https://www.netzeroassetmanagers.org/"
-    pyautogui.write(website_url)
-    pyautogui.press('enter')
-    pyautogui.sleep(1)
-    pyautogui.hotkey("ctrl", "s")
-    pyautogui.sleep(2)
-    web_page_name = "website"  # Replace with your desired name
-    pyautogui.write(web_page_name)
-    pyautogui.press("enter")  # Save the web page
-else:
-    print("Firefox window not found. Please make sure Firefox is open.")
-
-# Navigate to the desired URL
-pyautogui.write('https://www.netzeroassetmanagers.org/signatories/')
-pyautogui.press('enter')
+# firefox_windows = pyautogui.getWindowsWithTitle("Mozilla Firefox")
+# if firefox_windows:
+#     firefox_window = firefox_windows[0]
+#     firefox_window.activate()
+#     pyautogui.sleep(1)
+#     website_url = "https://www.netzeroassetmanagers.org/"
+#     pyautogui.write(website_url)
+#     pyautogui.press('enter')
+#     pyautogui.sleep(1)
+#     pyautogui.hotkey("ctrl", "s")
+#     pyautogui.sleep(2)
+#     web_page_name = "website"  # Replace with your desired name
+#     pyautogui.write(web_page_name)
+#     pyautogui.press("enter")  # Save the web page
+# else:
+#     print("Firefox window not found. Please make sure Firefox is open.")
+#
+# # Navigate to the desired URL
+# pyautogui.write('https://www.netzeroassetmanagers.org/signatories/')
+# pyautogui.press('enter')
 
 folder_path = r"C:\Users\sasha\OneDrive - CMi2i\Desktop\Signatories – The Net Zero Asset Managers initiative_files"
 
